@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    img,
+    video {
+      width: 100%;
+      display: block;
+    }
+
+    .wrap {
+      margin: auto;
+      max-width: 720px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .FV_video {
+      position: absolute;
+      top: 43%;
+      right: 0;
+      width: 80%;
+      z-index: -1;
+    }
+
+    .QA_box {
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .QA_01 {
+      height: 27%;
+      top: 35%;
+    }
+
+    .QA_02 {
+      height: 17%;
+      top: 22%;
+    }
+
+    .QA_03 {
+      height: 20%;
+      top: 22%;
+    }
+
+    .QA_04 {
+      height: 22%;
+      top: 23%;
+    }
+
+    .QA_box input {
+      display: none;
+    }
+
+    .QA_A {
+      width: 36%;
+      height: 50%;
+      background: #9b9b9b;
+      border-radius: 1rem;
+      color: #fff;
+      font-weight: bold;
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .checked {
+      background: #fe8900;
+    }
+
+    .offer {
+      position: absolute;
+      top: 0;
+    }
+
+    .link {
+      position: absolute;
+      bottom: 11%;
+      width: 80%;
+      left: 12%;
+      animation: btnAction 1s ease-in-out infinite;
+    }
+
+    @keyframes btnAction {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .QA_A {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .QA_box {
+        gap: 1rem;
+      }
+
+      .QA_A {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <img src="./images/240716_questionnaire_LP_1.jpg" alt="">
+    <img src="./images/240716_questionnaire_LP_2.jpg" alt="">
+    <div class="relative">
+      <img src="./images/240716_questionnaire_LP_3.jpg" alt="">
+      <div class="QA_box QA_01">
+        <input type="checkbox" name="" id="Q1_1" class="Q1_input">
+        <label class="QA_A" for="Q1_1">1隻</label>
+        <input type="checkbox" name="" id="Q1_2" class="Q1_input">
+        <label class="QA_A" for="Q1_2">2~3隻</label>
+        <input type="checkbox" name="" id="Q1_3" class="Q1_input">
+        <label class="QA_A" for="Q1_3">4~5隻</label>
+        <input type="checkbox" name="" id="Q1_4" class="Q1_input">
+        <label class="QA_A" for="Q1_4">5隻以上</label>
+      </div>
+    </div>
+    <div class="relative">
+      <img src="./images/240716_questionnaire_LP_4.jpg" alt="">
+      <div class="QA_box QA_02">
+        <input type="checkbox" name="" id="Q2_1" class="Q2_input">
+        <label class="QA_A" for="Q2_1">貴賓犬</label>
+        <input type="checkbox" name="" id="Q2_2" class="Q2_input">
+        <label class="QA_A" for="Q2_2">馬爾<br>濟斯</label>
+        <input type="checkbox" name="" id="Q2_3" class="Q2_input">
+        <label class="QA_A" for="Q2_3">柴犬</label>
+        <input type="checkbox" name="" id="Q2_4" class="Q2_input">
+        <label class="QA_A" for="Q2_4">柯基犬</label>
+        <input type="checkbox" name="" id="Q2_5" class="Q2_input">
+        <label class="QA_A" for="Q2_5">博美</label>
+        <input type="checkbox" name="" id="Q2_6" class="Q2_input">
+        <label class="QA_A" for="Q2_6">拉不<br>拉多</label>
+        <input type="checkbox" name="" id="Q2_7" class="Q2_input">
+        <label class="QA_A" for="Q2_7">其他</label>
+      </div>
+    </div>
+    <div class="relative">
+      <img src="./images/240716_questionnaire_LP_5.jpg" alt="">
+      <div class="QA_box QA_03">
+        <input type="checkbox" name="" id="Q3_1" class="Q3_input">
+        <label class="QA_A" for="Q3_1">清澈<br>明亮</label>
+        <input type="checkbox" name="" id="Q3_2" class="Q3_input">
+        <label class="QA_A" for="Q3_2">有點<br>白濁</label>
+        <input type="checkbox" name="" id="Q3_3" class="Q3_input">
+        <label class="QA_A" for="Q3_3">大面積<br>混濁</label>
+        <input type="checkbox" name="" id="Q3_4" class="Q3_input">
+        <label class="QA_A" for="Q3_4">呈現<br>白色</label>
+      </div>
+    </div>
+    <div class="relative">
+      <img src="./images/240716_questionnaire_LP_6.jpg" alt="">
+      <div class="QA_box QA_04">
+        <input type="checkbox" name="" id="Q4_1" class="Q4_input">
+        <label class="QA_A" for="Q4_1">還沒有</label>
+        <input type="checkbox" name="" id="Q4_2" class="Q4_input">
+        <label class="QA_A" for="Q4_2">點眼<br>藥水</label>
+        <input type="checkbox" name="" id="Q4_3" class="Q4_input">
+        <label class="QA_A" for="Q4_3">吃保健<br>食品</label>
+        <input type="checkbox" name="" id="Q4_4" class="Q4_input">
+        <label class="QA_A" for="Q4_4">看醫生</label>
+      </div>
+    </div>
+    <img src="./images/240716_questionnaire_LP_7.jpg" alt="">
+    <div class="relative">
+      <img src="./images/240716_questionnaire_LP_8.jpg" alt="">
+      <div class="offer">
+        <img src="./images/240716_questionnaire_LP_8_4.png" alt="">
+        <a href="" class="link">
+          <img src="" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const QA_box = document.querySelectorAll('.QA_box')
+    const Q1_inputs = document.querySelectorAll('.Q1_input')
+    const Q2_inputs = document.querySelectorAll('.Q2_input')
+    const Q3_inputs = document.querySelectorAll('.Q3_input')
+    const Q4_inputs = document.querySelectorAll('.Q4_input')
+    const offer = document.querySelector('.offer')
+    const link = document.querySelector('.link')
+
+    const state = []
+    QA_box.forEach(() => {
+      state.push(false)
+    })
+
+    const offers = [
+      { offer: './images/240716_questionnaire_LP_8_1.png', btn: './images/btn_1.png' },
+      { offer: './images/240716_questionnaire_LP_8_2.png', btn: './images/btn_2.png' },
+      { offer: './images/240716_questionnaire_LP_8_3.png', btn: './images/btn_3.png' }
+    ]
+
+    const para = window.location.search.split('?')[1]
+    const newHref = `https://wanchan-life.tw/Landing/Formlp/_test_eyesone_lp_240704_jason.aspx?survey&${para}`
+
+    link.setAttribute('href', newHref)
+
+    var offerOrder = 0
+    const offerView = (order) => {
+      if (state.indexOf(false) < 0) {
+        if (order >= 2) {
+          offer.firstElementChild.setAttribute('src', `${offers[2].offer}`)
+          link.firstElementChild.setAttribute('src', `${offers[2].btn}`)
+        } else {
+          offer.firstElementChild.setAttribute('src', `${offers[order].offer}`)
+          link.firstElementChild.setAttribute('src', `${offers[order].btn}`)
+        }
+      } else {
+        offer.firstElementChild.setAttribute('src', './images/240716_questionnaire_LP_8_4.png')
+        link.firstElementChild.setAttribute('src', '')
+      }
+    }
+
+    const checkbox = (input, group, index) => {
+      input.addEventListener('input', () => {
+        input.nextElementSibling.classList.toggle('checked')
+        for (const input of group) {
+          if (input.nextElementSibling.classList.contains('checked')) {
+            state[index] = true
+            break
+          } else {
+            state[index] = false
+          }
+        }
+        offerView(offerOrder)
+        // console.log(`Q${index + 1}`)
+      })
+    }
+
+    const radio = (input, group, index, Q1Index) => {
+      input.addEventListener('input', (e) => {
+        if (e.target.getAttribute('class').includes('Q1')) {
+          offerOrder = Q1Index
+          console.log(offerOrder)
+        }
+        for (const input of group) {
+          input.nextElementSibling.classList.remove('checked')
+        }
+        input.nextElementSibling.classList.add('checked')
+        state[index] = true
+        offerView(offerOrder)
+        // console.log(`Q${index + 1}`)
+      })
+    }
+
+    Q1_inputs.forEach((input, index) => {
+      radio(input, Q1_inputs, 0, index)
+    })
+    Q2_inputs.forEach((input) => {
+      checkbox(input, Q2_inputs, 1)
+    })
+    Q3_inputs.forEach((input) => {
+      radio(input, Q3_inputs, 2)
+    })
+    Q4_inputs.forEach((input) => {
+      radio(input, Q4_inputs, 3)
+    })
+  </script>
+</body>
+
+</html>
